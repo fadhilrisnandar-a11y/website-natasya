@@ -4,40 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Untuk Natasya ♡</title>
+    <title>Untuk Natasya 🤍</title>
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- =========================
+         MUSIK
+    ========================== -->
+
+    <audio id="music" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button
+        class="music-disc"
+        id="musicButton"
+        aria-label="Putar musik"
+    >
+        <span>♫</span>
+    </button>
+
+
+    <!-- =========================
+         FLOATING HEARTS
+    ========================== -->
+
+    <div class="hearts">
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+        <span>♡</span>
+    </div>
+
+
+    <!-- =========================
          OPENING
     ========================== -->
 
-    <section class="opening">
+    <section class="hero">
 
-        <div class="hearts">
-            <span>♡</span>
-            <span>♡</span>
-            <span>♡</span>
-            <span>♡</span>
-            <span>♡</span>
-        </div>
+        <div class="hero-content reveal">
 
-        <div class="opening-content">
-
-            <p class="small-text">
-                sebuah cerita dari
+            <p class="small-title">
+                Sebuah cerita yang pernah kita punya
             </p>
 
             <h1>
-                Fadhiil<br>
-                <span>&</span><br>
+                Fadhiil
+                <span>&</span>
                 Natasya
             </h1>
 
@@ -47,13 +78,12 @@
 
             <div class="line"></div>
 
-            <p class="opening-message">
-                "Ada beberapa orang yang datang dalam hidup kita,
-                lalu meninggalkan cerita yang tidak mudah dilupakan."
+            <p class="date">
+                23 Oktober 2024 — 5 Agustus 2026
             </p>
 
-            <a href="#tentang" class="start-button">
-                Buka Cerita ♡
+            <a href="#tentang" class="scroll-btn">
+                ↓
             </a>
 
         </div>
@@ -65,56 +95,50 @@
          TENTANG KITA
     ========================== -->
 
-    <section class="section" id="tentang">
+    <section id="tentang" class="section about">
 
-        <div class="section-number">
-            01
-        </div>
+        <div class="container">
 
-        <p class="section-label">
-            OUR STORY
-        </p>
+            <div class="section-title reveal">
 
-        <h2>
-            Tentang Kita
-        </h2>
+                <span>01</span>
 
-        <div class="pink-line"></div>
+                <h2>
+                    💗 Tentang Kita
+                </h2>
 
-        <p class="intro">
-            Kita mungkin sudah tidak berjalan di jalan yang sama,
-            tetapi pernah ada sebuah waktu ketika cerita kita
-            menjadi bagian penting dalam hidup masing-masing.
-        </p>
-
-
-        <div class="about-card">
-
-            <div class="about-icon">
-                ♡
             </div>
 
-            <h3>
-                Fadhiil & Natasya
-            </h3>
 
-            <p>
-                Dua orang yang pernah saling mengenal,
-                saling menemani, saling berbagi cerita,
-                dan pernah menjadi alasan untuk tersenyum.
-            </p>
+            <div class="about-card reveal">
 
-        </div>
+                <div class="about-decoration">
+                    ♡
+                </div>
 
+                <p>
+                    Kita pernah menjadi dua orang yang saling menemukan
+                    di waktu yang mungkin tidak pernah kita rencanakan.
+                </p>
 
-        <div class="quote">
+                <p>
+                    Ada banyak cerita yang kita lewati bersama. Ada tawa,
+                    ada bahagia, ada masalah, dan ada banyak kenangan yang
+                    sampai sekarang masih tersimpan dengan baik.
+                </p>
 
-            <span>“</span>
+                <p>
+                    Mungkin perjalanan kita tidak berakhir seperti yang dulu
+                    pernah kita bayangkan. Tapi bukan berarti semua yang
+                    pernah kita jalani menjadi sesuatu yang sia-sia.
+                </p>
 
-            Tidak semua cerita harus berakhir bersama
-            untuk menjadi cerita yang berarti.
+                <p class="quote">
+                    "Beberapa orang mungkin hanya datang sebentar,
+                    tetapi kenangannya bisa tinggal lebih lama."
+                </p>
 
-            <span>”</span>
+            </div>
 
         </div>
 
@@ -127,75 +151,79 @@
 
     <section class="section gallery-section">
 
-        <div class="section-number">
-            02
-        </div>
+        <div class="container">
 
-        <p class="section-label">
-            MEMORIES
-        </p>
+            <div class="section-title reveal">
 
-        <h2>
-            Galeri Kenangan
-        </h2>
+                <span>02</span>
 
-        <div class="pink-line"></div>
+                <h2>
+                    📸 Galeri Kenangan
+                </h2>
 
-        <p class="intro">
-            Beberapa momen mungkin hanya berlangsung sebentar,
-            tetapi kenangannya bisa tinggal lebih lama.
-        </p>
-
-
-        <div class="gallery">
-
-            <div class="photo photo-large">
-
-                <img src="img/foto1.jpeg"
-                     alt="Kenangan Fadhiil dan Natasya">
-
-                <div class="photo-caption">
-                    <span>01</span>
-                    sebuah kenangan
-                </div>
+                <p>
+                    Beberapa momen yang pernah menjadi bagian
+                    dari cerita kita.
+                </p>
 
             </div>
 
 
-            <div class="photo">
+            <div class="gallery">
 
-                <img src="img/foto2.jpeg"
-                     alt="Kenangan">
+                <div class="photo reveal">
 
-                <div class="photo-caption">
-                    <span>02</span>
-                    momen kecil
+                    <img
+                        src="img/foto1.jpeg"
+                        alt="Kenangan 1"
+                    >
+
+                    <div class="photo-number">
+                        01
+                    </div>
+
                 </div>
 
-            </div>
 
+                <div class="photo reveal">
 
-            <div class="photo">
+                    <img
+                        src="img/foto2.jpeg"
+                        alt="Kenangan 2"
+                    >
 
-               <img src="img/foto3.jpeg"
-                     alt="Kenangan">
+                    <div class="photo-number">
+                        02
+                    </div>
 
-                <div class="photo-caption">
-                    <span>03</span>
-                    pernah bahagia
                 </div>
 
-            </div>
+
+                <div class="photo reveal">
+
+                    <img
+                        src="img/foto3.jpeg"
+                        alt="Kenangan 3"
+                    >
+
+                    <div class="photo-number">
+                        03
+                    </div>
+
+                </div>
 
 
-            <div class="photo photo-wide">
+                <div class="photo reveal">
 
-               <img src="img/foto4.jpeg"
-                     alt="Kenangan">
+                    <img
+                        src="img/foto4.jpeg"
+                        alt="Kenangan 4"
+                    >
 
-                <div class="photo-caption">
-                    <span>04</span>
-                    yang pernah ada
+                    <div class="photo-number">
+                        04
+                    </div>
+
                 </div>
 
             </div>
@@ -211,139 +239,125 @@
 
     <section class="section timeline-section">
 
-        <div class="section-number">
-            03
-        </div>
+        <div class="container">
 
-        <p class="section-label">
-            OUR JOURNEY
-        </p>
+            <div class="section-title reveal">
 
-        <h2>
-            Timeline Kita
-        </h2>
+                <span>03</span>
 
-        <div class="pink-line"></div>
-
-        <p class="intro">
-            Setiap hubungan punya awal, perjalanan,
-            dan akhirnya sendiri.
-        </p>
-
-
-        <div class="timeline">
-
-
-            <!-- 23 OKTOBER 2024 -->
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-
-                    <span class="date">
-                        23 OKTOBER 2024
-                    </span>
-
-                    <h3>
-                        Awal dari Kita
-                    </h3>
-
-                    <p>
-                        Hari ketika cerita kita dimulai.
-                        Dari dua orang yang akhirnya saling
-                        memilih untuk berjalan bersama dan
-                        membuat banyak kenangan yang sampai
-                        sekarang masih aku ingat.
-                    </p>
-
-                </div>
+                <h2>
+                    🕰️ Timeline Kita
+                </h2>
 
             </div>
 
 
-            <!-- MASA BERSAMA -->
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-
-                    <span class="date">
-                        HARI-HARI YANG KITA LEWATI
-                    </span>
-
-                    <h3>
-                        Tentang Waktu yang Pernah Kita Punya
-                    </h3>
-
-                    <p>
-                        Ada banyak hal sederhana yang pernah
-                        kita lakukan. Percakapan, tawa, cerita,
-                        dan momen-momen kecil yang mungkin
-                        terlihat biasa, tapi ternyata menjadi
-                        bagian yang berharga dalam hidupku.
-                    </p>
-
-                </div>
-
-            </div>
+            <div class="timeline">
 
 
-            <!-- 5 AGUSTUS 2026 -->
+                <!-- Timeline 1 -->
 
-            <div class="timeline-item">
+                <div class="timeline-item reveal">
 
-                <div class="timeline-dot"></div>
+                    <div class="timeline-dot"></div>
 
-                <div class="timeline-content">
+                    <div class="timeline-card">
 
-                    <span class="date">
-                        5 AGUSTUS 2026
-                    </span>
+                        <span class="timeline-date">
+                            23 Oktober 2024
+                        </span>
 
-                    <h3>
-                        Sampai di Sini
-                    </h3>
+                        <h3>
+                            Awal dari Kita
+                        </h3>
 
-                    <p>
-                        Akhirnya kita sampai di titik di mana
-                        hubungan ini harus berhenti. Bukan karena
-                        semua yang pernah kita jalani tidak berarti,
-                        tapi karena keadaan dan waktu membawa kita
-                        ke arah yang berbeda.
-                    </p>
+                        <p>
+                            Hari ketika cerita kita dimulai. Hari yang kemudian
+                            menjadi salah satu tanggal yang akan selalu aku ingat.
+                        </p>
+
+                    </div>
 
                 </div>
 
-            </div>
+
+                <!-- Timeline 2 -->
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-card">
+
+                        <span class="timeline-date">
+                            Setelahnya
+                        </span>
+
+                        <h3>
+                            Banyak Cerita
+                        </h3>
+
+                        <p>
+                            Kita melewati banyak hal bersama. Ada hari-hari
+                            sederhana yang ternyata menjadi kenangan yang berharga.
+                        </p>
+
+                    </div>
+
+                </div>
 
 
-            <!-- DESEMBER -->
+                <!-- Timeline 3 -->
 
-            <div class="timeline-item">
+                <div class="timeline-item reveal">
 
-                <div class="timeline-dot"></div>
+                    <div class="timeline-dot"></div>
 
-                <div class="timeline-content">
+                    <div class="timeline-card">
 
-                    <span class="date">
-                        DESEMBER
-                    </span>
+                        <span class="timeline-date">
+                            5 Agustus 2026
+                        </span>
 
-                    <h3>
-                        "Aku Tunggu Kamu Balik"
-                    </h3>
+                        <h3>
+                            Sampai di Sini
+                        </h3>
 
-                    <p>
-                        Ada satu kalimat yang masih aku ingat:
-                        "Tunggu desember aku balik."
-                        Entah apa yang akan terjadi ketika
-                        Desember datang, tapi kalimat itu tetap
-                        menjadi sesuatu yang aku simpan dalam ingatan.
-                    </p>
+                        <p>
+                            Kita akhirnya sampai pada titik di mana jalan kita
+                            tidak lagi berjalan seperti sebelumnya.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Timeline 4 -->
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-card">
+
+                        <span class="timeline-date">
+                            Desember
+                        </span>
+
+                        <h3>
+                            Aku Tunggu Kamu Balik
+                        </h3>
+
+                        <p>
+                            "Aku tunggu kamu balik Desember ya."
+                        </p>
+
+                        <p>
+                            Kalimat sederhana yang sampai sekarang masih aku simpan.
+                        </p>
+
+                    </div>
 
                 </div>
 
@@ -355,155 +369,91 @@
 
 
     <!-- =========================
-         SURAT UNTUK NATASYA
+         SURAT
     ========================== -->
 
     <section class="section letter-section">
 
-        <div class="section-number">
-            04
-        </div>
+        <div class="container">
 
-        <p class="section-label">
-            A LETTER
-        </p>
+            <div class="section-title reveal">
 
-        <h2>
-            Untuk Natasya
-        </h2>
+                <span>04</span>
 
-        <div class="pink-line"></div>
-
-
-        <div class="letter">
-
-            <div class="letter-top">
-                <span>♡</span>
-            </div>
-
-
-            <p>
-                Hai, Natasya.
-            </p>
-
-
-            <p>
-                Aku nggak tahu apakah kamu akan membaca tulisan
-                ini sampai selesai atau tidak. Tapi kalau kamu
-                sampai di bagian ini, aku cuma ingin menuliskan
-                beberapa hal yang mungkin selama ini belum pernah
-                aku sampaikan dengan baik.
-            </p>
-
-
-            <p>
-                Terima kasih karena pernah menjadi bagian dari
-                hidupku sejak 23 Oktober 2024. Terima kasih untuk
-                semua waktu, cerita, tawa, dan hal-hal kecil yang
-                pernah kita lewati bersama.
-            </p>
-
-
-            <p>
-                Aku tahu salah satu alasan semuanya berakhir
-                adalah karena aku terlalu sering tidak punya
-                waktu untuk kamu. Mungkin waktu itu aku terlalu
-                sibuk dengan banyak hal sampai lupa bahwa
-                seseorang yang aku sayang juga membutuhkan
-                kehadiranku.
-            </p>
-
-
-            <p>
-                Aku nggak mau menyalahkan kamu karena memilih
-                pergi. Aku juga nggak mau menyalahkan keadaan.
-                Mungkin memang ada hal-hal yang baru kita sadari
-                setelah semuanya sudah terlambat.
-            </p>
-
-
-            <p>
-                Tapi ada satu kalimat yang masih aku ingat:
-            </p>
-
-
-            <div class="letter-highlight">
-                "Aku tunggu kamu balik Desember ya."
-            </div>
-
-
-            <p>
-                Entah kenapa kalimat sederhana itu masih terasa
-                berbeda buatku. Mungkin karena di dalamnya ada
-                harapan bahwa suatu hari nanti kita bisa bertemu
-                lagi, walaupun aku sendiri nggak tahu apa yang
-                akan terjadi saat hari itu datang.
-            </p>
-
-
-            <p>
-                Kalau Desember nanti akhirnya kita benar-benar
-                bertemu lagi, aku nggak tahu apakah semuanya akan
-                kembali seperti dulu. Mungkin iya, mungkin juga
-                tidak.
-            </p>
-
-
-            <p>
-                Dan kalau ternyata kita sudah benar-benar menjadi
-                dua orang yang berbeda, aku tetap ingin kamu tahu
-                bahwa aku pernah benar-benar menghargai kehadiranmu
-                dalam hidupku.
-            </p>
-
-
-            <p>
-                Aku tidak menulis ini untuk meminta apa pun.
-            </p>
-
-
-            <p>
-                Aku cuma ingin kamu tahu...
-            </p>
-
-
-            <div class="letter-highlight">
-
-                Aku pernah sayang sama kamu.<br>
-                Aku pernah bahagia karena kamu.<br>
-                Dan aku akan tetap menghargai semua kenangan
-                yang pernah kita punya.
+                <h2>
+                    💌 Surat dari Fadhiil
+                </h2>
 
             </div>
 
 
-            <p>
-                Kalau nanti kamu menemukan kebahagiaanmu
-                di tempat lain, semoga kamu menjaganya baik-baik.
-            </p>
+            <div class="letter-card reveal">
+
+                <div class="letter-top">
+
+                    <span>
+                        Untuk Natasya
+                    </span>
+
+                    <span>
+                        ♡
+                    </span>
+
+                </div>
 
 
-            <p>
-                Dan kalau suatu hari kamu mengingat namaku,
-                aku harap yang kamu ingat bukan hanya bagaimana
-                semuanya berakhir, tapi juga bagaimana kita
-                pernah tertawa dan bahagia bersama.
-            </p>
+                <div class="letter-content">
+
+                    <p>
+                        Aku tahu sekarang mungkin masih banyak hal yang belum
+                        pasti. Aku juga sadar mungkin ada orang lain yang sedang
+                        mengisi harimu dan membuatmu bahagia. Karena itu aku
+                        nggak pernah mau memaksa atau menuntut apa pun dari kamu.
+                    </p>
+
+                    <p>
+                        Aku cuma ingin jujur kalau sampai hari ini aku masih
+                        menyimpan harapan. Bukan karena aku nggak bisa menerima
+                        keadaan, tapi karena apa yang pernah kita punya memang
+                        berarti buat aku. Semua kenangan, cerita, dan waktu yang
+                        pernah kita lewati nggak bisa begitu saja hilang dari
+                        ingatan.
+                    </p>
+
+                    <p>
+                        Kalau nanti di bulan Desember kamu benar-benar memutuskan
+                        untuk kembali, aku akan menyambutmu dengan hati yang terbuka.
+                        Tapi kalau ternyata pilihanmu bukan aku, aku juga nggak akan
+                        membencimu. Aku hanya ingin melihatmu bahagia dengan
+                        keputusan yang benar-benar kamu pilih dari hati.
+                    </p>
+
+                    <p>
+                        Aku nggak mau jadi seseorang yang membuatmu bingung.
+                        Aku cuma mau kamu tahu kalau masih ada satu orang di sini
+                        yang peduli sama kamu, yang mendoakan hal-hal baik untukmu,
+                        dan yang masih menyimpan tempat untukmu di dalam hatinya.
+                    </p>
+
+                    <p>
+                        Sampai saat itu tiba, aku akan tetap menjalani hidupku
+                        seperti biasa. Dan apa pun yang terjadi nanti, semoga kita
+                        sama-sama menemukan kebahagiaan yang memang ditakdirkan
+                        untuk kita.
+                    </p>
+
+                </div>
 
 
-            <p>
-                Terima kasih, Natasya.
-            </p>
+                <div class="letter-bottom">
 
+                    <span>
+                        — Fadhiil
+                    </span>
 
-            <p>
-                Untuk semuanya.
-            </p>
+                </div>
 
-
-            <p class="letter-signature">
-                — Fadhiil
-            </p>
+            </div>
 
         </div>
 
@@ -516,58 +466,43 @@
 
     <section class="ending">
 
-        <div class="ending-content">
+        <div class="ending-content reveal">
 
-            <div class="flower">
-                🌷
-            </div>
-
-            <p class="section-label">
-                THE END
-            </p>
-
-
-            <h2>
-                Sampai Jumpa<br>
-                di Cerita yang Lain
-            </h2>
-
-
-            <div class="ending-line"></div>
-
-
-            <p>
-                Tidak semua orang yang kita sayangi
-                ditakdirkan untuk tinggal selamanya.
-            </p>
-
-
-            <p>
-                Kadang seseorang hadir untuk memberikan
-                cerita, pelajaran, dan kenangan yang akan
-                kita bawa sepanjang perjalanan.
-            </p>
-
-
-            <p class="last-message">
-                Semoga kamu selalu bahagia,<br>
-                di mana pun kamu berada.
-            </p>
-
-
-            <div class="final-heart">
+            <div class="ending-heart">
                 ♡
             </div>
 
+            <p class="ending-small">
+                Untuk seseorang yang pernah menjadi rumah
+            </p>
 
-            <p class="names">
+            <h2>
+                Terima kasih sudah<br>
+                pernah menjadi bagian<br>
+                dari hidupku.
+            </h2>
 
-                Fadhiil Risnandar
+            <p class="ending-text">
+                Apa pun yang terjadi nanti, aku akan selalu menghargai
+                cerita yang pernah kita punya.
+            </p>
 
-                <span>×</span>
+            <div class="ending-date">
 
-                Natasya Boru Pak Pahan
+                23 Oktober 2024
 
+                <br>
+
+                <span>—</span>
+
+                <br>
+
+                5 Agustus 2026
+
+            </div>
+
+            <p class="final">
+                Semoga kamu selalu bahagia. 🤍
             </p>
 
         </div>
@@ -580,8 +515,24 @@
     ========================== -->
 
     <footer>
-        dibuat dengan sebuah kenangan ♡
+
+        <p>
+            Made with memories ♡
+        </p>
+
+        <span>
+            Fadhiil × Natasya
+        </span>
+
     </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+         Akan kita kembangkan setelah CSS
+    ========================== -->
+
+    <script src="script.js"></script>
 
 </body>
 </html>
