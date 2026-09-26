@@ -1117,3 +1117,79 @@ footer span {
         font-size: 40px;
     }
 }
+
+.music-disc {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    width: 58px;
+    height: 58px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle at center,
+        #fff 0 8%,
+        #f6a6c1 9% 20%,
+        #e8759c 21% 55%,
+        #d95782 56% 100%
+    );
+
+    color: white;
+    font-size: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    z-index: 9999;
+
+    box-shadow: 0 8px 25px rgba(180, 70, 110, 0.3);
+
+    transition: transform 0.3s ease;
+}
+
+.music-disc span {
+    display: block;
+    line-height: 1;
+}
+
+.music-disc:hover {
+    transform: scale(1.08);
+}
+
+.music-disc.playing {
+    animation: musicRotate 4s linear infinite;
+}
+
+@keyframes musicRotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* HP */
+
+@media (max-width: 600px) {
+
+    .music-disc {
+        top: 15px;
+        right: 15px;
+
+        width: 52px;
+        height: 52px;
+
+        font-size: 21px;
+
+        z-index: 99999;
+    }
+
+}
